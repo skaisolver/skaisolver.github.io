@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skAI | Master AI & Join The Top 15%</title>
+    <meta name="description" content="Learn AI with hands-on, in-person classes in Las Vegas. From beginners to enterprises - master AI and work smarter. Join the top 15% who truly understand AI.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5BA4E5;
+            --primary-dark: #3D8BD4;
+            --secondary: #800020;
+            --secondary-light: #A31545;
+            --accent: #1B365D;
+            --accent-light: #2C4A7C;
+            --dark: #1B365D;
+            --dark-lighter: #2C4A7C;
+            --light: #F0F7FC;
+            --text-dark: #1B365D;
+            --text-light: #5A7A9A;
+            --white: #FFFFFF;
+            --maroon: #800020;
+            --sky-blue: #5BA4E5;
+            --navy: #1B365D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #5BA4E5 0%, #1B365D 100%);
+            opacity: 0.03;
+        }
+
+        .bg-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(91, 164, 229, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(128, 0, 32, 0.1) 0%, transparent 50%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--maroon);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--maroon);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: var(--maroon);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(128, 0, 32, 0.3);
+        }
+
+        .cta-button:hover {
+            background: var(--secondary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(128, 0, 32, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--sky-blue), var(--navy));
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out both;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            letter-spacing: -2px;
+        }
+
+        h1 .highlight {
+            background: linear-gradient(135deg, var(--sky-blue), var(--maroon));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--maroon);
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(128, 0, 32, 0.3);
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(128, 0, 32, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--dark);
+            padding: 1.2rem 3rem;
+            border: 2px solid var(--dark);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: var(--dark);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--sky-blue), var(--maroon), var(--navy));
+        }
+
+        .stat-item {
+            margin-bottom: 2rem;
+        }
+
+        .stat-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--sky-blue);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        /* Classes Section */
+        .classes {
+            padding: 8rem 2rem;
+            background: var(--light);
+            position: relative;
+        }
+
+        .section-header {
+            max-width: 800px;
+            margin: 0 auto 5rem;
+            text-align: center;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--maroon);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            letter-spacing: -1px;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .classes-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .class-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .class-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .class-header {
+            padding: 2.5rem 2rem 2rem;
+            background: linear-gradient(135deg, var(--sky-blue), var(--navy));
+            color: white;
+            position: relative;
+        }
+
+        .class-card:nth-child(2) .class-header {
+            background: linear-gradient(135deg, var(--maroon), var(--secondary-light));
+        }
+
+        .class-card:nth-child(3) .class-header {
+            background: linear-gradient(135deg, var(--navy), var(--accent-light));
+        }
+
+        .class-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .class-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .class-subtitle {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .class-body {
+            padding: 2rem;
+        }
+
+        .class-description {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .class-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .class-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #E2E8F0;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .class-features li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            background: var(--sky-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.7rem;
+            flex-shrink: 0;
+        }
+
+        .class-footer {
+            padding: 0 2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .class-price {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--maroon);
+        }
+
+        .enroll-btn {
+            background: var(--dark);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .enroll-btn:hover {
+            background: var(--maroon);
+            transform: scale(1.05);
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            padding: 8rem 2rem;
+            background: white;
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 4rem auto 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--sky-blue), var(--navy));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            color: white;
+            transform: rotate(-5deg);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover .feature-icon {
+            transform: rotate(0deg) scale(1.1);
+        }
+
+        .feature-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .feature-description {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, var(--dark), var(--dark-lighter));
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(91, 164, 229, 0.15) 0%, transparent 70%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .cta-section .btn-primary {
+            background: white;
+            color: var(--maroon);
+        }
+
+        .cta-section .btn-primary:hover {
+            background: var(--light);
+            color: var(--secondary-light);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 2rem;
+            background: var(--light);
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid #E2E8F0;
+            border-radius: 15px;
+            font-size: 1rem;
+            font-family: 'DM Sans', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--sky-blue);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background: var(--maroon);
+            color: white;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: var(--secondary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(128, 0, 32, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand img {
+            height: 45px;
+            width: auto;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+        }
+
+        .footer-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--sky-blue);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--dark);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul li a {
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .classes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo"><img src="SKai logo.png" alt="SKAI Logo"></a>
+            <ul class="nav-links">
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Enroll Now</a>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#classes" onclick="toggleMobileMenu()">Classes</a></li>
+            <li><a href="#why-us" onclick="toggleMobileMenu()">Why Us</a></li>
+            <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Join The Top 15% Who Master AI</div>
+                <h1>The Internet Changed Everything. <span class="highlight">AI Is Doing It Again.</span></h1>
+                <p class="hero-description">
+                    Over 80% of people worldwide don't know how to use AI. We serve everyone from individuals asking "What is ChatGPT?" to enterprises upskilling their teams. Join the top 15% who can utilize AI to manage their life and amplify their work.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#classes" class="btn-primary">View Classes</a>
+                    <a href="#contact" class="btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="stat-item">
+                        <div class="stat-number">$100</div>
+                        <div class="stat-label">Per Class - In-Person Training</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10-15</div>
+                        <div class="stat-label">Students Per Class - Personalized Attention</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Weekly</div>
+                        <div class="stat-label">New Sessions Starting - Flexible Schedule</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="section-header">
+            <div class="section-tag">Our Curriculum</div>
+            <h2>Choose Your AI Journey</h2>
+            <p class="section-description">
+                We don't just teach AI-we help you master it. Our goal is simple: place you in the top 15% of people who can utilize AI to manage your life and amplify your work.
+            </p>
+        </div>
+
+        <div class="classes-grid">
+            <!-- Class 1 -->
+            <div class="class-card">
+                <div class="class-header">
+                    <div class="class-number">CLASS 01</div>
+                    <h3 class="class-title">AI 101: Everyday Essentials</h3>
+                    <p class="class-subtitle">Your introduction to artificial intelligence</p>
+                </div>
+                <div class="class-body">
+                    <p class="class-description">
+                        Demystify AI and learn how to use it in your daily life. Perfect for beginners who want to understand the technology everyone's talking about.
+                    </p>
+                    <ul class="class-features">
+                        <li><span class="check-icon">&#10003;</span> Understanding AI fundamentals</li>
+                        <li><span class="check-icon">&#10003;</span> ChatGPT & AI assistants mastery</li>
+                        <li><span class="check-icon">&#10003;</span> Practical daily applications</li>
+                        <li><span class="check-icon">&#10003;</span> Safety & ethical considerations</li>
+                    </ul>
+                </div>
+                <div class="class-footer">
+                    <div class="class-price">$100</div>
+                    <a href="#contact" class="enroll-btn">Enroll</a>
+                </div>
+            </div>
+
+            <!-- Class 2 -->
+            <div class="class-card">
+                <div class="class-header">
+                    <div class="class-number">CLASS 02</div>
+                    <h3 class="class-title">AI for Business</h3>
+                    <p class="class-subtitle">Supercharge your business operations</p>
+                </div>
+                <div class="class-body">
+                    <p class="class-description">
+                        Transform your business with AI-powered workflows, sales funnels, and automation. Designed for SMB owners and corporate professionals.
+                    </p>
+                    <ul class="class-features">
+                        <li><span class="check-icon">&#10003;</span> Automated sales funnels</li>
+                        <li><span class="check-icon">&#10003;</span> Workflow optimization</li>
+                        <li><span class="check-icon">&#10003;</span> Smart scheduling systems</li>
+                        <li><span class="check-icon">&#10003;</span> Customer engagement AI</li>
+                    </ul>
+                </div>
+                <div class="class-footer">
+                    <div class="class-price">$100</div>
+                    <a href="#contact" class="enroll-btn">Enroll</a>
+                </div>
+            </div>
+
+            <!-- Class 3 -->
+            <div class="class-card">
+                <div class="class-header">
+                    <div class="class-number">CLASS 03</div>
+                    <h3 class="class-title">Vibe Coding</h3>
+                    <p class="class-subtitle">Build websites without coding</p>
+                </div>
+                <div class="class-body">
+                    <p class="class-description">
+                        Create professional websites using AI-no coding experience required. Turn your ideas into reality with "vibe coding" techniques.
+                    </p>
+                    <ul class="class-features">
+                        <li><span class="check-icon">&#10003;</span> AI-powered web development</li>
+                        <li><span class="check-icon">&#10003;</span> Design without code</li>
+                        <li><span class="check-icon">&#10003;</span> Deploy your own website</li>
+                        <li><span class="check-icon">&#10003;</span> Ongoing site management</li>
+                    </ul>
+                </div>
+                <div class="class-footer">
+                    <div class="class-price">$100</div>
+                    <a href="#contact" class="enroll-btn">Enroll</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-choose">
+        <div class="section-header">
+            <div class="section-tag">Why Choose Us</div>
+            <h2>Learn AI The Right Way</h2>
+            <p class="section-description">
+                Stay ahead of the curve by learning to work smarter and simplify complexity. From individual beginners to enterprise teams, we help you master AI.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">&#128101;</div>
+                <h3 class="feature-title">Small Classes</h3>
+                <p class="feature-description">
+                    10-15 students maximum ensures you get personalized attention and can ask all your questions.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">&#127970;</div>
+                <h3 class="feature-title">In-Person Learning</h3>
+                <p class="feature-description">
+                    Real classroom experience in Las Vegas. No Zoom fatigue-just genuine human connection and learning.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">&#128188;</div>
+                <h3 class="feature-title">Business-Focused</h3>
+                <p class="feature-description">
+                    Learn practical skills you can apply immediately to your work, not theoretical concepts you'll never use.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">&#127919;</div>
+                <h3 class="feature-title">No Tech Required</h3>
+                <p class="feature-description">
+                    Designed for non-technical professionals. If you can use email, you can master AI with us.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">&#128640;</div>
+                <h3 class="feature-title">Immediate Results</h3>
+                <p class="feature-description">
+                    Walk out of each class with skills and tools you can use the next day in your business or career.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">&#129309;</div>
+                <h3 class="feature-title">Ongoing Support</h3>
+                <p class="feature-description">
+                    Join our network of AI-empowered professionals. Your learning doesn't end when class does.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Join The Top 15%?</h2>
+            <p>
+                AI is changing everything-again. Don't get left behind. Join thousands who are already mastering AI to manage their lives and amplify their work.
+            </p>
+            <a href="#contact" class="btn-primary">Enroll in Your First Class</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <div class="section-tag">Get Started</div>
+                <h2>Reserve Your Spot</h2>
+                <p class="section-description">
+                    Classes fill up fast with our small group sizes. Register now to secure your spot in the next session.
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="class">Which class interests you?</label>
+                    <select id="class" name="class" required>
+                        <option value="">Select a class</option>
+                        <option value="class1">Class 1: AI 101 - Everyday Essentials</option>
+                        <option value="class2">Class 2: AI for Business</option>
+                        <option value="class3">Class 3: Vibe Coding</option>
+                        <option value="all">All three classes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about yourself and your goals (optional)</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand"><img src="SKai logo.png" alt="SKAI Logo"></div>
+                <p class="footer-description">
+                    The internet changed everything. AI is doing it again. We help individuals and enterprises master AI to work smarter and simplify complexity. Join the top 15%.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#classes">Our Classes</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Enroll Now</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Classes</h4>
+                <ul class="footer-links">
+                    <li><a href="#classes">AI 101 - Everyday Essentials</a></li>
+                    <li><a href="#classes">AI for Business</a></li>
+                    <li><a href="#classes">Vibe Coding</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>Las Vegas, Nevada</li>
+                    <li><a href="mailto:Contact@learnskai.com">Contact@learnskai.com</a></li>
+                    <li><a href="tel:+17253051405">(725) 305-1405</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 skAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // Show success message
+            alert('Thank you for your registration! We will contact you shortly to confirm your spot.');
+
+            // Reset form
+            this.reset();
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.class-card, .feature-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
