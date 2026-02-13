@@ -109,44 +109,13 @@
         }
 
         .logo img {
-            height: 60px;
+            height: 45px;
             width: auto;
             transition: transform 0.3s ease;
-            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
         }
 
         .logo img:hover {
             transform: scale(1.05);
-        }
-
-        /* Hero Logo - Big and Bold */
-        .hero-logo {
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto 2rem;
-            animation: fadeInScale 1s ease-out;
-            text-align: center;
-            background: transparent;
-            padding: 0;
-        }
-
-        .hero-logo img {
-            width: 100%;
-            height: auto;
-            filter: none;
-            background: transparent;
-            display: block;
-        }
-
-        @keyframes fadeInScale {
-            from {
-                opacity: 0;
-                transform: scale(0.8) translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
         }
 
         .nav-links {
@@ -812,10 +781,6 @@
 
         /* Responsive Design */
         @media (max-width: 968px) {
-            .hero-logo {
-                max-width: 400px;
-            }
-
             .hero-container {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -847,11 +812,6 @@
         }
 
         @media (max-width: 640px) {
-            .hero-logo {
-                max-width: 300px;
-                margin-bottom: 1.5rem;
-            }
-
             h1 {
                 font-size: 2.5rem;
             }
@@ -881,7 +841,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo"><img src="SKai_logo.png" alt="skAI Logo"></a>
+            <a href="#" class="logo"><img src="SKai_logo.png" alt="skAI"></a>
             <ul class="nav-links">
                 <li><a href="#classes">Classes</a></li>
                 <li><a href="#why-us">Why Us</a></li>
@@ -909,9 +869,6 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-logo">
-                    <img src="SKai_logo.png" alt="skAI - Master AI and Join The Top 15%">
-                </div>
                 <div class="hero-badge">Join The Top 15% Who Master AI</div>
                 <h1>The Internet Changed Everything. <span class="highlight">AI Is Doing It Again.</span></h1>
                 <p class="hero-description">
