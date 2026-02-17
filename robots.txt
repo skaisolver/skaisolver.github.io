@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://skysolves.com/sitemap.xml
+
+# Sky Solves - Las Vegas AI Training Classes
+# In-Person ChatGPT Courses and AI Education
