@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sky Solves">
+    <meta name="google-site-verification" content="77mofDEnVY1qGrzVkhJE3NUmclil_Ni9cPBdZOb3nXo">
+    <title>Sky Solves | AI Classes Las Vegas | In-Person AI Training | ChatGPT Courses LV</title>
+    <link rel="canonical" href="https://skysolves.com/" />
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:title" content="Sky Solves | In-Person AI Classes in Las Vegas">
+    <meta property="og:description" content="In-person AI training in Las Vegas. Master ChatGPT and automation for everyday life, work, and business at Sky Solves. Small group, hands-on classes. Call (725) 305-1405.">
+    <meta property="og:url" content="https://skysolves.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://skysolves.com/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sky Solves | AI Classes in Las Vegas">
+    <meta name="twitter:description" content="In-person AI training in Las Vegas. Master ChatGPT and automation for everyday life, work, and business at Sky Solves. Small group, hands-on classes. Call (725) 305-1405.">
+    <meta name="twitter:image" content="https://skysolves.com/og-image.jpg">
+    <meta name="description" content="In-person AI training in Las Vegas. Master ChatGPT and automation for everyday life, work, and business at Sky Solves. Small group, hands-on classes. Call (725) 305-1405.">
+    <meta name="keywords" content="skysolves, Sky Solves, AI classes Las Vegas, in person AI classes, Sky las vegas, Las Vegas AI training">
+    <meta name="geo.region" content="US-NV">
+    <meta name="geo.placename" content="Las Vegas">
+    <meta name="geo.position" content="36.1699;-115.1398">
+    <meta name="ICBM" content="36.1699, -115.1398">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Archivo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --slate: #6B8CAE;
+            --maroon: #C06D7D;
+            --black: #0A0A0A;
+            --dark-gray: #1A1A1A;
+            --medium-gray: #2A2A2A;
+            --light-gray: #E8E8E8;
+            --muted: #8A8A8A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Archivo', sans-serif;
+            background: var(--black);
+            color: var(--light-gray);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        /* Top bar */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--maroon);
+            padding: 0.6rem 3rem;
+            text-align: center;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            z-index: 1001;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            position: fixed;
+            top: 36px;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.2);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 90px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--light-gray);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--slate);
+        }
+
+        .nav-cta {
+            background: var(--maroon);
+            color: white;
+            padding: 0.85rem 2.25rem;
+            border: 2px solid var(--maroon);
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 0 20px rgba(192, 109, 125, 0.4);
+        }
+
+        .nav-cta:hover {
+            background: transparent;
+            color: var(--maroon);
+            box-shadow: 0 0 30px rgba(192, 109, 125, 0.6);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 160px;
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 50%, var(--black) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 2px 2px, rgba(107, 140, 174, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+            opacity: 0.3;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(107, 140, 174, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 3rem 6rem;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            border: 2px solid var(--slate);
+            color: var(--slate);
+            padding: 0.6rem 1.8rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-family: 'Archivo', sans-serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 0.95;
+            margin-bottom: 1.5rem;
+            color: white;
+            letter-spacing: -3px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 .highlight {
+            display: block;
+            background: linear-gradient(135deg, var(--slate), var(--maroon));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            max-width: 700px;
+            font-size: 1.1rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background: var(--maroon);
+            color: white;
+            padding: 1.75rem 4rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 900;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 3px solid var(--maroon);
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 0 40px rgba(192, 109, 125, 0.5);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--maroon);
+            box-shadow: 0 0 60px rgba(192, 109, 125, 0.7);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--slate);
+            padding: 1.5rem 3rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid var(--slate);
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: var(--slate);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--dark-gray);
+            border-top: 1px solid var(--medium-gray);
+            border-bottom: 1px solid var(--medium-gray);
+            padding: 4rem 3rem;
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 1rem;
+            border-right: 1px solid var(--medium-gray);
+            position: relative;
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            filter: grayscale(100%) brightness(1.5);
+        }
+
+        .stat-number {
+            font-family: 'Archivo', sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--slate);
+            line-height: 1;
+            margin-bottom: 0.75rem;
+        }
+
+        .stat-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Section */
+        section {
+            padding: 8rem 3rem;
+        }
+
+        .section-header {
+            max-width: 800px;
+            margin: 0 auto 6rem;
+            text-align: center;
+        }
+
+        .section-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--maroon);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        h2 {
+            font-family: 'Archivo', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            color: white;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        /* Classes Grid */
+        .classes {
+            background: var(--dark-gray);
+        }
+
+        .classes-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+        }
+
+        .class-card {
+            background: var(--black);
+            border: 1px solid var(--medium-gray);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .class-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--slate);
+        }
+
+        .class-card:nth-child(2)::before {
+            background: var(--maroon);
+        }
+
+        .class-card:nth-child(3)::before {
+            background: linear-gradient(90deg, var(--slate), var(--maroon));
+        }
+
+        .class-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            border-color: var(--slate);
+            box-shadow: 0 20px 60px rgba(107, 140, 174, 0.3);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--maroon);
+            color: white;
+            padding: 0.5rem 3rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transform: rotate(45deg);
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .class-header {
+            padding: 2.5rem;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+
+        .class-number {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--muted);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .class-title {
+            font-family: 'Archivo', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .class-subtitle {
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .class-body {
+            padding: 2.5rem;
+        }
+
+        .class-description {
+            color: var(--muted);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .class-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .class-features li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--medium-gray);
+            color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .class-features li:last-child {
+            border-bottom: none;
+        }
+
+        .class-features li::before {
+            content: '✓';
+            color: var(--slate);
+            font-weight: 700;
+            font-size: 1.2rem;
+            width: 24px;
+            height: 24px;
+            background: rgba(107, 140, 174, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .class-footer {
+            padding: 2.5rem;
+            border-top: 1px solid var(--medium-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .class-price {
+            font-family: 'Archivo', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--slate);
+        }
+
+        .class-enroll {
+            background: var(--maroon);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid var(--maroon);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(192, 109, 125, 0.3);
+        }
+
+        .class-enroll:hover {
+            background: transparent;
+            color: var(--maroon);
+            box-shadow: 0 0 30px rgba(192, 109, 125, 0.5);
+        }
+
+        /* Features */
+        .features {
+            background: var(--black);
+        }
+
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .feature-card {
+            padding: 2.5rem;
+            border: 1px solid var(--medium-gray);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--slate);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            filter: grayscale(100%) brightness(1.5);
+        }
+
+        .feature-title {
+            font-family: 'Archivo', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .feature-description {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        /* CTA Block */
+        .cta-block {
+            background: linear-gradient(135deg, var(--slate), var(--maroon));
+            padding: 8rem 3rem;
+            text-align: center;
+        }
+
+        .cta-block h2 {
+            margin-bottom: 2rem;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+        }
+
+        .cta-block p {
+            font-size: 1.3rem;
+            margin-bottom: 3.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.8;
+        }
+
+        .cta-block .btn-primary {
+            background: white;
+            color: var(--black);
+            border-color: white;
+            box-shadow: 0 0 40px rgba(255,255,255,0.3);
+            font-size: 1.2rem;
+            padding: 1.75rem 4rem;
+        }
+
+        .cta-block .btn-primary:hover {
+            background: transparent;
+            color: white;
+            box-shadow: 0 0 60px rgba(255,255,255,0.5);
+        }
+
+        /* Contact */
+        .contact {
+            background: var(--dark-gray);
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: var(--black);
+            padding: 3rem;
+            border: 1px solid var(--medium-gray);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: block;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: var(--dark-gray);
+            border: 1px solid var(--medium-gray);
+            color: var(--light-gray);
+            font-family: 'Archivo', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--slate);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background: var(--maroon);
+            color: white;
+            padding: 1.5rem 3rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border: 2px solid var(--maroon);
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            box-shadow: 0 0 25px rgba(192, 109, 125, 0.3);
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            background: transparent;
+            color: var(--maroon);
+            box-shadow: 0 0 40px rgba(192, 109, 125, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            border-top: 1px solid var(--medium-gray);
+            padding: 4rem 3rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-title {
+            font-family: 'Archivo', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--slate);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--medium-gray);
+            text-align: center;
+            color: var(--muted);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: var(--black);
+        }
+
+        .steps-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0;
+        }
+
+        .step {
+            padding: 3rem;
+            border: 1px solid var(--medium-gray);
+            border-right: none;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .step:last-child {
+            border-right: 1px solid var(--medium-gray);
+        }
+
+        .step:hover {
+            background: var(--dark-gray);
+            border-color: var(--slate);
+        }
+
+        .step-number {
+            font-family: 'Archivo', sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--medium-gray);
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-title {
+            font-family: 'Archivo', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .step-description {
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .step-arrow {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: var(--slate);
+            z-index: 1;
+            display: none;
+        }
+
+        /* FAQ */
+        .faq {
+            background: var(--dark-gray);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--medium-gray);
+            margin-bottom: 1rem;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: var(--slate);
+        }
+
+        .faq-question {
+            padding: 1.75rem 2rem;
+            font-family: 'Archivo', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.8rem;
+            color: var(--slate);
+            font-weight: 300;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.open .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .faq-item.open .faq-answer {
+            padding: 0 2rem 1.75rem;
+            max-height: 500px;
+        }
+
+        /* What You'll Get */
+        .what-you-get {
+            background: var(--dark-gray);
+        }
+
+        .benefits-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border: 1px solid var(--medium-gray);
+            transition: all 0.3s;
+        }
+
+        .benefit-item:hover {
+            border-color: var(--slate);
+            background: var(--black);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-title {
+            font-family: 'Archivo', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Instructor */
+        .instructor {
+            background: var(--black);
+        }
+
+        .instructor-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .instructor-photo {
+            width: 300px;
+            height: 300px;
+            background: var(--dark-gray);
+            border: 3px solid var(--medium-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            color: var(--medium-gray);
+        }
+
+        .instructor-info h3 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .instructor-title {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--slate);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .instructor-bio {
+            color: var(--muted);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .instructor-credentials {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .instructor-credentials li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--medium-gray);
+            color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .instructor-credentials li:last-child {
+            border-bottom: none;
+        }
+
+        .instructor-credentials li::before {
+            content: '✓';
+            color: var(--slate);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 968px) {
+            .instructor-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .instructor-photo {
+                margin: 0 auto;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Location */
+        .location {
+            background: var(--black);
+        }
+
+        .location-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .location-info h3 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+        }
+
+        .location-detail {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+
+        .location-detail:last-child {
+            border-bottom: none;
+        }
+
+        .location-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+
+        .location-text strong {
+            display: block;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--slate);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+        }
+
+        .location-text p {
+            color: var(--light-gray);
+            font-size: 1.1rem;
+        }
+
+        .location-text a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .location-text a:hover {
+            color: var(--slate);
+        }
+
+        .location-map {
+            background: var(--dark-gray);
+            border: 1px solid var(--medium-gray);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(100%) invert(90%) contrast(90%);
+        }
+
+        @media (max-width: 968px) {
+            .location-container {
+                grid-template-columns: 1fr;
+            }
+
+            .location-map {
+                height: 300px;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .step {
+                border-right: 1px solid var(--medium-gray);
+                border-bottom: none;
+            }
+
+            .step:last-child {
+                border-bottom: 1px solid var(--medium-gray);
+            }
+        }
+
+        /* Mobile Sticky CTA */
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--maroon);
+            padding: 1rem 2rem;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+            z-index: 999;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .mobile-sticky-cta a {
+            display: block;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--light-gray);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 90px;
+            left: 0;
+            right: 0;
+            background: var(--black);
+            padding: 2rem;
+            border-bottom: 1px solid var(--medium-gray);
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul li a {
+            color: var(--light-gray);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .mobile-sticky-cta {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+                letter-spacing: -1px;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .top-bar {
+                font-size: 0.75rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .classes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 4rem 2rem;
+            }
+
+            .nav-container {
+                padding: 1rem 2rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                font-size: 1rem;
+                padding: 1.2rem 2.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-cta-group {
+                flex-direction: column;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://skysolves.com/#business",
+          "name": "Sky Solves - Las Vegas AI Training",
+          "alternateName": ["Sky Solves", "Sky Solves Las Vegas", "Sky Solves AI Classes"],
+          "image": "https://skysolves.com/slogo-transparent.png",
+          "logo": "https://skysolves.com/slogo-transparent.png",
+          "url": "https://skysolves.com/",
+          "telephone": "+17253051405",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Las Vegas",
+            "addressRegion": "NV",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "36.1699",
+            "longitude": "-115.1398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Las Vegas"
+          },
+          "description": "Hands-on AI classes in Las Vegas. AI 101, Business AI workflows, and Vibe Coding for individuals and enterprises.",
+          "sameAs": []
+        },
+        {
+          "@type": "Course",
+          "@id": "https://skysolves.com/#course-ai-101",
+          "name": "AI 101: Everyday Essentials",
+          "description": "Beginner-friendly introduction to AI and practical use of ChatGPT and AI assistants for everyday life and work.",
+          "provider": { "@id": "https://skysolves.com/#business" },
+          "offers": {
+            "@type": "Offer",
+            "price": "100",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://skysolves.com/#course-ai-business",
+          "name": "AI for Business",
+          "description": "Transform your business with AI-powered workflows, sales funnels, and automation for SMB owners and corporate professionals.",
+          "provider": { "@id": "https://skysolves.com/#business" },
+          "offers": {
+            "@type": "Offer",
+            "price": "100",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://skysolves.com/#course-vibe-coding",
+          "name": "Vibe Coding",
+          "description": "Build and deploy professional websites using AI—no coding experience required.",
+          "provider": { "@id": "https://skysolves.com/#business" },
+          "offers": {
+            "@type": "Offer",
+            "price": "100",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+<!-- Top Bar -->
+    <div class="top-bar">
+        📞 <a href="tel:+17253051405">(725) 305-1405</a> &nbsp;|&nbsp; Las Vegas AI Training Classes &nbsp;|&nbsp; <a href="contact.html">Reserve Your Spot Today</a>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="slogo-transparent.png" alt="Sky Solves - Las Vegas AI Training Classes | In-Person ChatGPT Courses">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="why-us.html">Why Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="nav-cta">Enroll Now</a>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="classes.html" onclick="toggleMenu()">Classes</a></li>
+            <li><a href="why-us.html" onclick="toggleMenu()">Why Us</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+        <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Why Choose Us</div>
+            <h1>
+                Learn AI The Right Way<br>
+                <span class="highlight">Expert Instruction</span>
+            </h1>
+            <p class="hero-description">
+                We're not just another online course. Sky Solves offers in-person, hands-on AI training in Las Vegas with expert instructors and small class sizes.
+            </p>
+        </div>
+    </section>
+<section id="why-us" class="features">
+        <div class="section-header">
+            <div class="section-label">Why Choose Us</div>
+            <h2>Learn The Right Way</h2>
+            <p class="section-description">
+                Stay ahead of the curve by learning to work smarter and simplify complexity. From individual beginners to enterprise teams, we help you master AI.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3 class="feature-title">Small Classes</h3>
+                <p class="feature-description">
+                    10-15 students maximum ensures you get personalized attention and can ask all your questions.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏢</div>
+                <h3 class="feature-title">In-Person Learning</h3>
+                <p class="feature-description">
+                    Real classroom experience in Las Vegas. No Zoom fatigue-just genuine human connection and learning.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3 class="feature-title">Business-Focused</h3>
+                <p class="feature-description">
+                    Learn practical skills you can apply immediately to your work, not theoretical concepts you'll never use.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">No Tech Required</h3>
+                <p class="feature-description">
+                    Designed for non-technical professionals. If you can use email, you can master AI with us.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3 class="feature-title">Immediate Results</h3>
+                <p class="feature-description">
+                    Walk out of each class with skills and tools you can use the next day in your business or career.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3 class="feature-title">Ongoing Support</h3>
+                <p class="feature-description">
+                    Join our network of AI-empowered professionals. Your learning doesn't end when class does.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Get -->
+    <section class="what-you-get">
+        <div class="section-header">
+            <div class="section-label">Included</div>
+            <h2>What You'll Get</h2>
+            <p class="section-description">Every student receives these valuable resources to support their AI journey.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">📜</div>
+                <h3 class="benefit-title">Certificate of Completion</h3>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">💬</div>
+                <h3 class="benefit-title">Private Discord Community</h3>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🛠️</div>
+                <h3 class="benefit-title">Lifetime Access to AI Tools</h3>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">📰</div>
+                <h3 class="benefit-title">Weekly Newsletter</h3>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">⚡</div>
+                <h3 class="benefit-title">Prompt Engineering Sheet</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="section-header">
+            <div class="section-label">Got Questions?</div>
+            <h2>FAQ</h2>
+            <p class="section-description">Everything you need to know before enrolling.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Do I need any tech experience?</div>
+                <div class="faq-answer">Absolutely not. Our classes are designed for everyday people. If you can use a smartphone or email, you have everything you need. We start from scratch and build up at your pace.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">How long is each class?</div>
+                <div class="faq-answer">Each session runs approximately 2-3 hours. We keep it focused and practical so you're not sitting through long lectures — you're actually doing things hands-on.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Where exactly are the classes held?</div>
+                <div class="faq-answer">Classes are held at Sky Towers, 2700 S Las Vegas Blvd, Las Vegas, NV. Conveniently located on the Las Vegas Strip with parking available nearby.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Can my company pay for multiple employees?</div>
+                <div class="faq-answer">Yes! We offer corporate and group enrollment. Call us directly at (725) 305-1405 to discuss bulk pricing and scheduling options for your team.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">What do I need to bring to class?</div>
+                <div class="faq-answer">Just yourself and a device — laptop, tablet, or even a smartphone works. We'll handle the rest. No software to install beforehand.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">What if I miss a session?</div>
+                <div class="faq-answer">Life happens. Give us a call and we'll work with you to get you into the next available session at no extra charge.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor -->
+    <section class="instructor">
+        <div class="section-header">
+            <div class="section-label">Meet Your Guide</div>
+            <h2>Your Instructor</h2>
+            <p class="section-description">Learn from an expert who's been in the trenches.</p>
+        </div>
+        <div class="instructor-container">
+            <div class="instructor-photo">
+                👤
+            </div>
+            <div class="instructor-info">
+                <h3>[Instructor Name]</h3>
+                <div class="instructor-title">Founder & Lead Instructor</div>
+                <p class="instructor-bio">
+                    [Bio paragraph 1 - Background and experience]
+                </p>
+                <p class="instructor-bio">
+                    [Bio paragraph 2 - Why they're passionate about teaching AI]
+                </p>
+                <ul class="instructor-credentials">
+                    <li>[Credential or achievement 1]</li>
+                    <li>[Credential or achievement 2]</li>
+                    <li>[Credential or achievement 3]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- FAQ -->
+    <section class="faq">
+        <div class="section-header">
+            <div class="section-label">Got Questions?</div>
+            <h2>FAQ</h2>
+            <p class="section-description">Everything you need to know before enrolling.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Do I need any tech experience?</div>
+                <div class="faq-answer">Absolutely not. Our classes are designed for everyday people. If you can use a smartphone or email, you have everything you need. We start from scratch and build up at your pace.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">How long is each class?</div>
+                <div class="faq-answer">Each session runs approximately 2-3 hours. We keep it focused and practical so you're not sitting through long lectures — you're actually doing things hands-on.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Where exactly are the classes held?</div>
+                <div class="faq-answer">Classes are held at Sky Towers, 2700 S Las Vegas Blvd, Las Vegas, NV. Conveniently located on the Las Vegas Strip with parking available nearby.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Can my company pay for multiple employees?</div>
+                <div class="faq-answer">Yes! We offer corporate and group enrollment. Call us directly at (725) 305-1405 to discuss bulk pricing and scheduling options for your team.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">What do I need to bring to class?</div>
+                <div class="faq-answer">Just yourself and a device — laptop, tablet, or even a smartphone works. We'll handle the rest. No software to install beforehand.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">What if I miss a session?</div>
+                <div class="faq-answer">Life happens. Give us a call and we'll work with you to get you into the next available session at no extra charge.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor -->
+    <section class="instructor">
+        <div class="section-header">
+            <div class="section-label">Meet Your Guide</div>
+            <h2>Your Instructor</h2>
+            <p class="section-description">Learn from an expert who's been in the trenches.</p>
+        </div>
+        <div class="instructor-container">
+            <div class="instructor-photo">
+                👤
+            </div>
+            <div class="instructor-info">
+                <h3>[Instructor Name]</h3>
+                <div class="instructor-title">Founder & Lead Instructor</div>
+                <p class="instructor-bio">
+                    [Bio paragraph 1 - Background and experience]
+                </p>
+                <p class="instructor-bio">
+                    [Bio paragraph 2 - Why they're passionate about teaching AI]
+                </p>
+                <ul class="instructor-credentials">
+                    <li>[Credential or achievement 1]</li>
+                    <li>[Credential or achievement 2]</li>
+                    <li>[Credential or achievement 3]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-block">
+        <h2>Ready to Join The Top 15%?</h2>
+        <p>
+            AI is changing everything-again. Don't get left behind. Join thousands who are already mastering AI to manage their lives and amplify their work.
+        </p>
+        <a href="contact.html" class="btn-primary">Enroll in Your First Class</a>
+    </section>
+
+<section class="cta-block">
+        <h2>Ready to Join The Top 15%?</h2>
+        <p>
+            AI is changing everything-again. Don't get left behind. Join thousands who are already mastering AI to manage their lives and amplify their work.
+        </p>
+        <a href="contact.html" class="btn-primary">Enroll in Your First Class</a>
+    </section>
+
+    <!-- Location -->
+    <section class="location">
+        <div class="section-header">
+            <div class="section-label">Find Us</div>
+            <h2>Our Location</h2>
+            <p class="section-description">Conveniently located on the Las Vegas Strip.</p>
+        </div>
+        <div class="location-container">
+            <div class="location-info">
+                <h3>Sky Towers</h3>
+                <div class="location-detail">
+                    <div class="location-icon">📍</div>
+                    <div class="location-text">
+                        <strong>Address</strong>
+                        <p>Sky Towers<br>2700 S Las Vegas Blvd<br>Las Vegas, NV</p>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <div class="location-icon">📞</div>
+                    <div class="location-text">
+                        <strong>Phone</strong>
+                        <p><a href="tel:+17253051405">(725) 305-1405</a></p>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <div class="location-icon">✉️</div>
+                    <div class="location-text">
+                        <strong>Email</strong>
+                        <p><a href="/cdn-cgi/l/email-protection#75161a1b0114160135061e0c061a190310065b161a18"><span class="__cf_email__" data-cfemail="61020e0f1500021521120a18120e0d1704124f020e0c">[email&#160;protected]</span></a></p>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <div class="location-icon">🕐</div>
+                    <div class="location-text">
+                        <strong>Sessions</strong>
+                        <p>Weekly — Contact us for schedule</p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.5!2d-115.1728!3d36.1147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c432c924e759%3A0x1234!2s2700+S+Las+Vegas+Blvd%2C+Las+Vegas%2C+NV+89109!5e0!3m2!1sen!2sus!4v1234567890"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <div class="section-label">Get Started</div>
+                <h2>Reserve Your Spot</h2>
+                <p class="section-description">
+                    Classes fill up fast with our small group sizes. Register now to secure your spot in the next session.
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(702) 555-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Which Class?</label>
+                        <select id="class" name="class" required>
+                            <option value="">Select a class</option>
+                            <option value="class1">Class 1: AI 101</option>
+                            <option value="class2">Class 2: AI for Business</option>
+                            <option value="class3">Class 3: Vibe Coding</option>
+                            <option value="all">All Classes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Goals (Optional)</label>
+                    <textarea id="message" name="message" placeholder="I want to learn how to use AI for my small business..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4 class="footer-title">Sky Solves</h4>
+                <p style="color: var(--muted); line-height: 1.7;">
+                    The internet changed everything. AI is doing it again. We help individuals and enterprises master AI to work smarter and simplify complexity.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="classes.html">Our Classes</a></li>
+                    <li><a href="why-us.html">Why Choose Us</a></li>
+                    <li><a href="contact.html">Enroll Now</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Classes</h4>
+                <ul class="footer-links">
+                    <li><a href="classes.html">AI 101</a></li>
+                    <li><a href="classes.html">AI for Business</a></li>
+                    <li><a href="classes.html">Vibe Coding</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>Las Vegas, Nevada</li>
+                    <li><a href="/cdn-cgi/l/email-protection#690a06071d080a1d291a02101a06051f0c1a470a0604"><span class="__cf_email__" data-cfemail="94f7fbfae0f5f7e0d4e7ffede7fbf8e2f1e7baf7fbf9">[email&#160;protected]</span></a></li>
+                    <li><a href="tel:+17253051405">(725) 305-1405</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="margin-bottom: 1.5rem; color: var(--muted); font-size: 0.85rem; line-height: 1.6;">
+                <strong style="color: var(--light-gray);">Sky Solves</strong> (skysolves) is the premier provider of <strong style="color: var(--light-gray);">in person AI classes</strong> in Las Vegas. Sky las vegas offers comprehensive <strong style="color: var(--light-gray);">AI classes Las Vegas</strong> professionals trust for hands-on <strong style="color: var(--light-gray);">Las Vegas AI training</strong>. Located at Sky Towers on the Las Vegas Strip, we provide weekly AI education with small class sizes. Call (725) 305-1405 to enroll in skysolves today.
+            </p>
+            © 2026 SKY SOLVES. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="contact.html">📞 Enroll Now - Call (725) 305-1405</a>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isOpen = item.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            // Open clicked if it was closed
+            if (!isOpen) item.classList.add('open');
+        }
+    </script>
+</body>
+</html><footer>
+        <div class="footer-container">
+            <div>
+                <h4 class="footer-title">Sky Solves</h4>
+                <p style="color: var(--muted); line-height: 1.7;">
+                    The internet changed everything. AI is doing it again. We help individuals and enterprises master AI to work smarter and simplify complexity.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="classes.html">Our Classes</a></li>
+                    <li><a href="why-us.html">Why Choose Us</a></li>
+                    <li><a href="contact.html">Enroll Now</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Classes</h4>
+                <ul class="footer-links">
+                    <li><a href="classes.html">AI 101</a></li>
+                    <li><a href="classes.html">AI for Business</a></li>
+                    <li><a href="classes.html">Vibe Coding</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>Las Vegas, Nevada</li>
+                    <li><a href="/cdn-cgi/l/email-protection#670408091306041327140c1e14080b1102144904080a"><span class="__cf_email__" data-cfemail="4e2d21203a2f2d3a0e3d25373d2122382b3d602d2123">[email&#160;protected]</span></a></li>
+                    <li><a href="tel:+17253051405">(725) 305-1405</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="margin-bottom: 1.5rem; color: var(--muted); font-size: 0.85rem; line-height: 1.6;">
+                <strong style="color: var(--light-gray);">Sky Solves</strong> (skysolves) is the premier provider of <strong style="color: var(--light-gray);">in person AI classes</strong> in Las Vegas. Sky las vegas offers comprehensive <strong style="color: var(--light-gray);">AI classes Las Vegas</strong> professionals trust for hands-on <strong style="color: var(--light-gray);">Las Vegas AI training</strong>. Located at Sky Towers on the Las Vegas Strip, we provide weekly AI education with small class sizes. Call (725) 305-1405 to enroll in skysolves today.
+            </p>
+            © 2026 SKY SOLVES. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="contact.html">📞 Enroll Now - Call (725) 305-1405</a>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+ 
